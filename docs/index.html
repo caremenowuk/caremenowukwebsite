@@ -15,6 +15,169 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+  
+  
+  <!-- LocalBusiness + Service Schema (JSON‑LD)-->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "@id": "https://caremenow.co.uk/#localbusiness",
+  "name": "CareMeNow",
+  "description": "CareMeNow provides reliable home care and domiciliary care across Birmingham, including Sparkhill, Hall Green, Moseley, Kings Heath, Small Heath, Acocks Green, Yardley and Shirley.",
+  "url": "https://caremenow.co.uk",
+  "logo": "https://caremenow.co.uk/images/logo.png",
+  "image": "https://caremenow.co.uk/images/hero_desktop.webp",
+  "telephone": "+44 121 517 0244",
+  "email": "hello@caremenow.co.uk",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "30 Wetherfield Road",
+    "addressLocality": "Birmingham",
+    "postalCode": "B11 3HS",
+    "addressCountry": "GB"
+  },
+  "areaServed": [
+    "Birmingham",
+    "Sparkhill",
+    "Hall Green",
+    "Moseley",
+    "Kings Heath",
+    "Small Heath",
+    "Yardley",
+    "Acocks Green",
+    "Shirley"
+  ],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.451,
+    "longitude": -1.855
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  }],
+  "sameAs": [
+    "https://caremenow.co.uk"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Home care in Birmingham",
+        "description": "Personal care, companionship, medication support and home help across Birmingham."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Domiciliary care Birmingham",
+        "description": "Daily visits, personal care, mobility support and household assistance."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Elderly care Birmingham",
+        "description": "Support for older adults to remain safe and independent at home."
+      }
+    }
+  ]
+}
+</script>
+
+
+<!-- FAQ Schema -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What areas of Birmingham do you cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide home care across Birmingham including Sparkhill, Hall Green, Moseley, Kings Heath, Small Heath, Acocks Green, Yardley, Shirley and nearby neighbourhoods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of home care do you provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer personal care, companionship, medication support, mobility assistance, meal preparation, home help and support with daily routines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can care start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In most cases we can begin home care within 24–48 hours, depending on your needs and location in Birmingham."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with NHS and local services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We regularly liaise with GP practices, community nurses, hospital discharge teams, therapists and local charities to keep your care joined up."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Review Schema -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "LocalBusiness",
+    "name": "CareMeNow",
+    "image": "https://caremenow.co.uk/images/hero_desktop.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "30 Wetherfield Road",
+      "addressLocality": "Birmingham",
+      "postalCode": "B11 3HS",
+      "addressCountry": "GB"
+    },
+    "telephone": "+44 121 517 0244"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Client Family Member"
+  },
+  "reviewBody": "CareMeNow have been incredibly supportive. The carers are kind, reliable and always go the extra mile to help our family member stay safe and comfortable at home."
+}
+</script>
+
+
+
+
 </head>
 
 <body>
@@ -191,56 +354,111 @@
     </div>
   </section>
 
-  <!-- BIRMINGHAM -->
-  <section id="birmingham" class="alt">
-    <div class="container">
-      <h2 class="section-title">Home care across Birmingham</h2>
-      <p class="section-intro">
-        We support people in Sparkhill, Hall Green, Moseley, Kings Heath, Small Heath, Acocks Green, Yardley, Shirley and nearby areas.
-      </p>
+<!-- BIRMINGHAM -->
+<section id="birmingham" class="alt">
+  <div class="container">
+    <h2 class="section-title">Home care in Birmingham and surrounding areas</h2>
 
-      <div class="grid-2">
-  <div>
-    <h3>Areas we cover</h3>
-    <p>If you’re just outside these areas, contact us — we may still be able to help or signpost you.</p>
-    <ul class="list-check">
-      <li>Sparkhill & Hall Green</li>
-      <li>Moseley & Kings Heath</li>
-      <li>Small Heath & Yardley</li>
-      <li>Acocks Green & Shirley</li>
-    </ul>
+    <!-- ⭐ INTERNAL LINKS ADDED HERE -->
+    <p class="section-intro">
+      CareMeNow provides reliable <a href="#services">home care in Birmingham</a> — including Sparkhill, Hall Green, Moseley, Kings Heath, Small Heath, Acocks Green, Yardley, Shirley and nearby neighbourhoods.
+      If you need support, <a href="#contact">contact us</a> to arrange a free home visit.
+    </p>
+
+    <div class="grid-2">
+      <div>
+        <h3>Areas we cover in Birmingham</h3>
+        <p>
+          We focus on the parts of Birmingham where we can provide consistent, high‑quality home care and respond quickly when needs change.
+        </p>
+
+        <ul class="list-check">
+          <li>Sparkhill, Hall Green and surrounding roads</li>
+          <li>Moseley, Kings Heath and nearby residential streets</li>
+          <li>Small Heath, Yardley and routes towards the city centre</li>
+          <li>Acocks Green, Shirley and nearby Solihull borders</li>
+        </ul>
+
+        <p>
+          If you live just outside these areas, contact us — we can often still help or recommend another trusted Birmingham home care provider.
+        </p>
+
+        <!-- ⭐ NEIGHBOURHOOD MICROCOPY ADDED HERE -->
+        <p>
+          Our carers know the roads, GP surgeries and community hubs across Sparkhill and Hall Green. 
+          We regularly support families near Moseley Village, Kings Heath High Street, Stratford Road and Coventry Road.
+        </p>
+      </div>
+
+      <div>
+        <h3>Working with local Birmingham services</h3>
+        <p>
+          Our carers regularly liaise with local health and community teams so your home care in Birmingham stays joined up and well‑coordinated.
+        </p>
+
+        <ul class="list-check">
+          <li>GP practices and community nursing teams in Birmingham</li>
+          <li>Hospital discharge teams at Birmingham hospitals</li>
+          <li>Therapists, reablement and community health services</li>
+          <li>Local charities, mosques, churches and community organisations</li>
+        </ul>
+
+        <p>
+          This local focus means your care plan is not just safe at home, but also connected to the wider support available across Birmingham.
+        </p>
+
+        <!-- ⭐ LOCAL TRUST SIGNALS ADDED HERE -->
+        <p>
+          All our carers are DBS‑checked, fully trained and follow CQC‑aligned standards for safe home care across Birmingham.
+        </p>
+
+        <!-- ⭐ LOCAL OUTBOUND LINKS ADDED HERE -->
+        <p>
+          We also work alongside local organisations such as 
+          <a href="https://www.birmingham.gov.uk" target="_blank">Birmingham City Council</a> 
+          and 
+          <a href="https://www.uhb.nhs.uk" target="_blank">University Hospitals Birmingham</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- ⭐ AI‑FRIENDLY PHRASE BLOCK ADDED HERE -->
+    <p style="margin-top: 1.5rem;">
+      CareMeNow is a Birmingham-based home care provider offering personal care, companionship, medication support and daily living assistance across the city.
+    </p>
+
+    <div style="margin-top: 2rem;">
+      <picture>
+        <source type="image/avif"
+                srcset="images/neighbourhood_mobile.avif 600w, images/neighbourhood_desktop.avif 1200w"
+                sizes="(max-width: 900px) 100vw, 100vw">
+        <source type="image/webp"
+                srcset="images/neighbourhood_mobile.webp 600w, images/neighbourhood_desktop.webp 1200w"
+                sizes="(max-width: 900px) 100vw, 100vw">
+        <img src="images/neighbourhood_desktop.webp"
+             alt="Residential streets and homes in Birmingham where CareMeNow provides home care"
+             loading="lazy"
+             decoding="async"
+             style="border-radius: 16px; width: 100%; height: auto;">
+      </picture>
+    </div>
+
+    <!-- ⭐ WHY CHOOSE US BLOCK ADDED HERE -->
+    <div class="why-local" style="margin-top: 2rem;">
+      <h3>Why choose CareMeNow for home care in Birmingham?</h3>
+      <ul class="list-check">
+        <li>Local carers who know Birmingham’s neighbourhoods well</li>
+        <li>Fast response times across Sparkhill, Hall Green and surrounding areas</li>
+        <li>Consistent, reliable visits — no rushed appointments</li>
+        <li>Clear communication with families and local health teams</li>
+        <li>Flexible care plans tailored to Birmingham’s diverse communities</li>
+      </ul>
+    </div>
+
   </div>
+</section>
 
-  <div>
-    <h3>Working with local services</h3>
-    <p>We regularly liaise with:</p>
-    <ul class="list-check">
-      <li>GP practices and community nurses</li>
-      <li>Hospital discharge teams</li>
-      <li>Therapists and community health teams</li>
-      <li>Local charities and community organisations</li>
-    </ul>
-  </div>
-</div>
 
-<!-- ⭐ Birmingham Image (full-width, below the grid) -->
-<div style="margin-top: 2rem;">
-  <picture>
-    <source type="image/avif"
-            srcset="images/neighbourhood_mobile.avif 600w, images/neighbourhood_desktop.avif 1200w"
-            sizes="(max-width: 900px) 100vw, 100vw">
-    <source type="image/webp"
-            srcset="images/neighbourhood_mobile.webp 600w, images/neighbourhood_desktop.webp 1200w"
-            sizes="(max-width: 900px) 100vw, 100vw">
-    <img src="images/neighbourhood_desktop.webp"
-         alt="Homes and neighbourhoods in Birmingham"
-         loading="lazy"
-         decoding="async"
-         style="border-radius: 16px; width: 100%; height: auto;">
-  </picture>
-</div>
-
-  </section>
 
   <!-- TEAM / E-E-A-T -->
   <section id="team">
@@ -276,6 +494,70 @@
           </ul>
         </div>
       </div>
+      
+      
+      
+    <!-- ⭐ REGISTERED MANAGER -->
+    <div class="subsection">
+      <h3>Meet our Registered Manager</h3>
+      <p>
+        Our service is led by an experienced Registered Manager with a Level 5 qualification in Leadership and Management for Health and Social Care. They bring extensive experience in domiciliary care, safeguarding, compliance and supporting adults with a wide range of needs.
+      </p>
+      <p>
+        The Registered Manager oversees care quality, staff training, supervision, risk management and day‑to‑day service delivery. Their role ensures that every client receives safe, person‑centred and consistent care.
+      </p>
+      <p>
+        They work closely with families, carers and local Birmingham services to keep care plans up‑to‑date and responsive.
+      </p>
+    </div>
+
+    <!-- ⭐ SAFEGUARDING & TRAINING -->
+    <div class="subsection alt">
+      <h3>Safeguarding & Training Standards</h3>
+      <p>
+        Every CareMeNow carer completes enhanced DBS checks, mandatory care training and ongoing supervision. We follow CQC‑aligned policies for safeguarding, medication, infection control, moving and handling, confidentiality and risk management.
+      </p>
+      <p>
+        Our training covers person‑centred care, dementia awareness, first aid, communication skills and supporting people with mobility or complex needs.
+      </p>
+    </div>
+
+    <!-- ⭐ RECRUITMENT -->
+    <div class="subsection">
+      <h3>Our Recruitment Standards</h3>
+      <p>
+        We only recruit carers who demonstrate compassion, reliability and professionalism. All applicants undergo interviews, reference checks, DBS checks and skills assessments before joining our team.
+      </p>
+      <p>
+        New carers shadow experienced staff before supporting clients independently.
+      </p>
+    </div>
+
+    <!-- ⭐ QUALITY ASSURANCE -->
+    <div class="subsection alt">
+      <h3>Quality Assurance</h3>
+      <p>
+        We welcome feedback and use it to continuously improve our service. Concerns or complaints are handled promptly, fairly and in line with our safeguarding and quality policies.
+      </p>
+      <p>
+        Regular reviews ensure care plans remain up‑to‑date and responsive to changing needs.
+      </p>
+    </div>
+
+    <!-- ⭐ CARE PHILOSOPHY -->
+    <div class="subsection">
+      <h3>Our Approach to Care</h3>
+      <p>
+        We believe great home care is built on trust, respect and genuine human connection. Our carers take time to understand each person’s routines, preferences and cultural background.
+      </p>
+      <p>
+        We support independence wherever possible, while providing reassurance and practical help when needed.
+      </p>
+    </div>
+
+  </div>
+      
+      
     </div>
   </section>
   
